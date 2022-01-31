@@ -41,9 +41,6 @@
 <h3> Table of Contents </h3> 
 
 - [About](#about)
-- [Issue Management](#issue-management)
-  - [Issue Types](#issue-types)
-  - [Issue Filters](#issue-filters)
 
 
 
