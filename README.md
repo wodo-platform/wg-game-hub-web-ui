@@ -1,6 +1,6 @@
 
 
-<h1><strong>Wodo Web UI 1.0</strong> <br>Web interface for the Wodo Gaming</h1>
+<h1><strong>Wodo GameHub Web UI 1.0</strong> <br>Web interface for the Wodo Gaming Hub</h1>
 
 <p>
 	<img src="https://raw.githubusercontent.com/wodo-platform/wg-web-ui/master/app/img/_src/branding/wodo_brandingimg/dst/svg?token=AAESYQUT2HAOJ2HJP2UGRVTBSI5BS" alt="Wodo Gaming">
@@ -8,9 +8,9 @@
 
 <p>Author: <a href="https://bekirdag.com" target="_blank">Bekir Dağ</a></p>
 
-<p>Wodo Web UI is an HTML5 template with Bootstrap 4 (grid & reboot), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+<p>Wodo Gaming Hub Web UI is an HTML5 template with Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
 
-<p><strong>Wodo Web UI</strong> Start Template uses the best practices of web development.</p>
+<p><strong>Wodo Game Hub Web UI</strong> Start Template uses the best practices of web development.</p>
 
 <p>Cross-browser compatibility: IE9+.</p>
 
