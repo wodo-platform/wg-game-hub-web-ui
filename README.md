@@ -48,5 +48,5 @@
 
 ## About
 
-This module contains all UI related assest and implementations for Game Hub solution
+This module contains all UI related assets and implementations for Game Hub solution
 
