@@ -1,0 +1,50 @@
+$default-font: "inter";
+$secondary-font: "grota";
+$secondary-font-italic: "grotaItalic";
+$accent: orange;
+$text: #fff;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 24px;
+$grid-columns: 12;
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$grid-breakpoints: (xs: 0, ss: 370px, ssm: 430px, sm: 576px, smmd: 595px, smd: 705px, md: 768px, ml: 830px, lg: 992px, xl: 1200px, xxl: 1440px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$xs: 0;
+$ss: 370px;
+$ssm: 430px;
+$ssmm: 510px;
+$smm: 530px;
+$sm: 576px;
+$smmd: 595px;
+$smdd: 626px;
+$smd: 705px;
+$md: 768px;
+$ml: 830px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+
+$gutter: $grid-gutter-width;
+
+$primary_color : #6100D4;
+$primary_dark : #4B00A3;
+$secondary_color : #FF3815;
+$secondary_color_dark : #B71C00;
+$light_primary_color : #D62000;
+$yellow1 : #F9CA56;
+$yellow2 : #FBDD11;
+$dark_color1 : #313336;
+$dark_color2 : #696C73;
+$dark_color3 : #767980;
+$dark_color4 : #909399;
+$dark_color5 : #9C9FA7;
+$dark_color6 : #B7BAC6;
+$dark_color7 : #DEDEE8;
+$dark_color8 : #767980;
+
+$light_color1 : #FFFFFF;
+$light_color2 : #F6F6F7;
+$light_color3 : #EEEEF1;
+$light_color4 : #D1D2D6;

@@ -1,0 +1,36 @@
+{
+    "results":[
+        {
+            "title": "Unicorn game",
+            "body": "Not everyone can be a Unicorn!",
+            "image": "/img/dst/svg/characters/unicornhead.svg",
+            "destination": "/games/unicorn",
+            "game_modes": 8,
+            "online_players": 1250
+        },
+        {
+            "title": "Cat game",
+            "body": "Do you want to take a ride?",
+            "image": "/img/dst/svg/characters/cathead.svg",
+            "destination": "/games/cat",
+            "game_modes": 16,
+            "online_players": 478
+        },
+        {
+            "title": "Panda game",
+            "body": "Not kung fu but something even better :)",
+            "image": "/img/dst/svg/characters/pandahead.svg",
+            "destination": "/games/panda",
+            "game_modes": 2,
+            "online_players": 322
+        },
+        {
+            "title": "Panther game",
+            "body": "The mountain sky is clear tonight",
+            "image": "/img/dst/svg/characters/pantherhead.svg",
+            "destination": "/games/panther",
+            "game_modes": 1,
+            "online_players": 50
+        }
+    ]
+}

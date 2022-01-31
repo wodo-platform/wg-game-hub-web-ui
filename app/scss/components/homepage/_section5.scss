@@ -1,0 +1,106 @@
+.section5{
+    background-color: $secondary_color_dark;
+    width: 100%;
+    max-width: none !important;
+    margin-top: -1px !important;
+    padding-bottom: 8vw !important;
+    padding-top: 8vw;
+    .section_text_wrapper{
+        position: absolute;
+        width: 100%;
+        top: -42px;
+        height: 100px;
+        @media all and (max-width : $md) {
+            top: 0;
+        }
+    }
+    .stage_header{
+        // padding-top: 12vh;
+        @media all and (max-width : $md) {
+            // padding-top: 7vh;
+        }
+    }
+    .stage_header_image{
+        padding-top: 5vh;
+        padding-bottom: 25px;
+        overflow: hidden;
+        position: relative;
+        .game_icons_wrapper{
+            max-width: 800px;
+            max-height: 82px;
+            width: 55.55vw;
+            height: 5.694vw;
+            margin: 0 auto;
+            min-width: 320px;
+            min-height: 40px;
+            margin-bottom: 20px;
+            z-index: 1;
+            .game_image1{
+                background-image: url("../img/dst/svg/homepage/agario.svg");
+                // max-width: 82px;
+                // max-height: 82px;
+                position: absolute;
+                width: 5.694vw;
+                height: 5.694vw;
+                background-size: 100%;
+                min-width: 40px;
+                min-height: 40px;
+                background-repeat: no-repeat;
+                float: left;
+                z-index: 2;
+            }
+    
+            .game_image2{
+                background-image: url("../img/dst/svg/homepage/snakeio.svg");
+                // max-width: 82px;
+                // max-height: 82px;
+                position: absolute;
+                width: 5.694vw;
+                height: 5.694vw;
+                background-size: 100%;
+                min-width: 40px;
+                min-height: 40px;
+                background-repeat: no-repeat;
+                float: left;
+                // margin-left: 15px;
+                left: calc(((100vw - 55.55vw) + 11.388vw)/2);
+                z-index: 2;
+            }
+            .game_image_message{
+                font-family: grota;
+                font-weight: 400;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                // max-height: 82px;
+                height: 5.694vw;
+                min-height: 40px;
+                // margin-left: 15px;
+                float: left;
+                position: absolute;
+                left: calc(((100vw - 55.55vw) + 22.776vw)/2 + 15px);
+                z-index: 0;
+            }
+        }
+
+        .section_bg_image{
+            background-image: url("../img/dst/jpg/homepage/mmos.jpg");
+            max-width: 800px;
+            max-height: 500px;
+            width: 55.55vw;
+            height: 34.72vw;
+            background-size: 100%;
+            margin: 0 auto;
+            min-width: 320px;
+            min-height: 200px;
+            box-shadow: 7px 11px 16px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            z-index: 1;
+            position: relative;
+            border: 2px solid #fff;
+            @media all and (max-width : $md) {
+                border-radius: 3px;
+            }
+        }
+    }
+}

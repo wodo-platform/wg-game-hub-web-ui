@@ -1,0 +1,117 @@
+.content_wrapper{
+    width: 100%;
+    background-image: url("../img/dst/png/components/misc/game_bg.png");    
+    padding: 10px;
+    @media all and (max-width : $lg) {
+        padding: 16px;
+    }
+    .login_wrapper{
+        display: grid;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        gap: 24px;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        .login_left{
+            grid-column: col-start / span 5;
+            padding-top: 50px;
+            margin-left: 50px;
+            @media all and (min-width: $xxl) {
+                margin-left: 0;
+            }
+            @media all and (max-width : $lg) {
+                grid-column: col-start / span 12;
+                margin-left: 0px;
+            }
+            .purple_logo{
+                width: 160px;
+                height: 55px;
+                background-image: url("../img/_src/branding/logo_purple.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                @media all and (max-width : $lg) {
+                    margin: 0 auto;
+                }
+            }
+            .tabs{
+                margin-top: 43px;
+                .tab_item_content{
+                    @media all and (max-width : $lg) {
+                        height: 67vh;
+                    }   
+                    @media all and (max-width : $ss) {
+                        height: 55vh;
+                    }   
+                    .login_email,
+                    .login_password{
+                        width: 100%;
+                        margin-bottom: 16px;
+                    }
+                    .remember_wrapper{
+                        display: grid;
+                        grid-template-columns: repeat(2, [col-start] 1fr);
+                        @media all and (max-width : $lg) {
+                            margin: 10px 0;
+                        }
+                        .checkbox{
+                            // grid-column: col-start / span 1;
+                        }
+                        .forgot_password{
+                            // grid-column: col-start 1/ span 1;
+                            place-self: end;
+                            text-align: right;
+                            height: 32px;
+                        }
+                    }
+                }
+            }
+            .sign_in{
+                width: 100%;
+                margin-top: 14px;
+                @media all and (max-width : $lg) {
+                    width: 91.46%;
+                    position: absolute;
+                    bottom: 56px;
+                }
+                @media all and (max-width : $ss) {
+                    bottom: 86px;
+                } 
+                .button{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .tos{
+                color: $dark_color4;
+                font-size: 14px;
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+                padding: 0 40px;
+                @media all and (max-width : $lg) {
+                    width: 91.46%;
+                    position: absolute;
+                    bottom: 10px;
+                }
+                a{
+                    color: $dark_color4;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .login_right{
+            grid-column: col-start 6/ span 7;
+            width: 55.55vw;
+            height: 56.94vw;
+            background-image: url("../img/dst/jpg/components/visuals/login_right.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            max-width: 800px;
+            max-height: 820px;
+            place-self: end;
+            @media all and (max-width : $lg) {
+                display: none;
+            }
+        }
+    }
+}

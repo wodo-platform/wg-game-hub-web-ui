@@ -1,0 +1,120 @@
+.section13{
+    background-color: $secondary_color;
+    width: 100%;
+    max-width: none !important;
+    padding-bottom: 8vw;
+    padding-top: 8vw;
+    z-index: 1;
+    .stage_header{
+        margin-bottom: 50px;
+    }
+    .stage_image{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+        img{
+            width: 300px;
+            height: 280px;
+        }
+    }
+    .stage_header_motto{
+        font-weight: bold;
+        font-weight: 700;
+        font-family: monospace;
+        font-size: 15px;
+    }
+    .pie_chart_wrapper{
+        display: grid;
+        grid-template-columns: repeat(12, [col-start] 1fr);
+        gap: 24px;  
+        .pie_chart{
+            margin: 0 auto;
+            width: 70%;
+            // max-width: 550px;
+            max-height: 500px;
+            min-height: 250px;
+            background-color: $secondary_color;
+            height: 80vw;
+            grid-column: col-start / span 6;
+            @media all and (max-width : $lg) {
+                display: none;
+            }
+        }
+        .pie_chart_legends{
+            grid-column: col-start 7/ span 5;
+            @media all and (max-width : $lg) {
+                grid-column: col-start 2/ span 10;
+            }
+            .total_tokens{
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            .token_distributions{
+                font-weight: bold;
+                margin-bottom: 15px;
+                .token_distribution_item{
+                    margin-bottom: 15px;
+                    .token_allocation_title{
+                        margin-bottom: 5px;
+                    }
+                    .token_allocation_content{
+                        background-color: #ff9482;
+                        border-radius: 3px;
+                        width: 100%;
+                        height: 8px;
+                        .token_allocation_bar{
+                            height: 8px;
+                            border-radius: 3px;
+                            &.color1{
+                                width: 20%;
+                                background-color: #3D88FB;
+                            }
+                            &.color2{
+                                width: 27%;
+                                background-color: #5637C8;
+                            }
+                            &.color3{
+                                width: 15%;
+                                background-color: #00D89E;
+                            }
+                            &.color4{
+                                width: 2%;
+                                background-color: #ACDF35;
+                            }
+                            &.color5{
+                                width: 1%;
+                                background-color: #9116CD;
+                            }
+                            &.color6{
+                                width: 6%;
+                                background-color: #3584bd;
+                            }
+                            &.color7{
+                                width: 6%;
+                                background-color: #f7f137;
+                            }
+                            &.color8{
+                                width: 12%;
+                                background-color: #323c6e;
+                            }
+                            &.color9{
+                                width: 10%;
+                                background-color: #deda4e;
+                            }
+                            &.color10{
+                                width: 1%;
+                                background-color: #AB3E5B;
+                            }
+                            &.color11{
+                                width: 50%;
+                                background-color: #ce4a6d;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

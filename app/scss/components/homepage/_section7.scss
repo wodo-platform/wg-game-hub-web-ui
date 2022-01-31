@@ -1,0 +1,73 @@
+.section7{
+    background-color: $secondary_color_dark;
+    padding-top: 8vw;
+    width: 100%;
+    max-width: none !important;
+    padding-bottom: 140px;
+    @media all and (max-width : $smmd) {
+        padding-top: 17vw;
+    }
+    // margin-top: -35px !important;
+    // overflow: hidden;
+    .team_wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+        .team_content{
+            position: relative;
+            .team_header{
+                text-align: center;
+                font-family: grota;
+                // font-size: 72px;
+                font-weight: 700;
+                margin-bottom: 50px;
+
+            }
+            .team_members{
+                
+                    .team_member{
+                        margin: 0 30px;
+                        text-align: center;
+                        .team_photo{
+                            img{
+                                border-radius: 50%;
+                                border: 10px solid #fff;
+                                width: 180px;
+                                height: 180px;
+                                margin: 0 auto;
+                            }
+                        }
+                        .team_name{
+                            font-family: grota;
+                            font-size: 27px;
+                            font-weight: 500;
+                            margin-top: 20px;
+                        }
+                        .team_title{
+                            font-family: grota;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 20px;
+                        }
+                        .team_member_content{
+                            margin-top: 30px;
+                            background-color: #fff;
+                            border-radius: 10px;
+                            padding: 50px 30px;
+                            color: $dark_color1;
+                            text-align: left;
+                            .team_member_links{
+                                margin-top: -10px;
+                                margin-bottom: 10px;
+                                .linkedin{
+                                    background-image: url("../img/dst/svg/components/icons/linkedin.svg");
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                        }
+                    }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,518 @@
+#header_wrapper{
+    width: 83.33%;
+    margin: 0 auto;
+    margin-top:31px;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    position: relative;
+    z-index: 2;
+
+    .logo{
+        margin:0 auto;
+        z-index: 1;
+    }
+    .sign_section{
+        text-align:right;
+    }
+    .social_links{
+        margin-top: 8px;
+    }
+    .mobile_button{
+        display: none;
+    }
+    @media all and (max-width : $md) {
+        width: 88%;
+        grid-template-columns: auto auto;
+        .social_links,.sign_button{
+            display: none;
+        }
+        .mobile_button{
+            display: block;
+            float: right;
+            margin-top: 2px;
+        }
+        .logo{
+            background-size: 75px 30px;
+            margin: 0;
+        }
+        .sign_section{
+            
+        }
+    }
+}
+
+.logo{
+    background-image: url("../img/_src/branding/logo_red.svg");
+    background-repeat: no-repeat;
+    width:100px;
+    height:35px;
+    margin-top: 3px;
+}
+
+.section2{
+    z-index: 1;
+}
+
+#hero_section{
+    // position: absolute;
+    width: 100%;
+    .hero_heading{
+        width: 46%;
+        margin: 100px auto 0 auto;
+        z-index: 2;
+        position: relative;
+        .sign_button{
+            display: none;
+            text-align: center;
+            margin-top: 30px;
+        }
+        @media all and (max-width : $md) {
+            width: 88.5%;
+            margin-top: 120px;
+            .sign_button{
+                display: block;
+            }
+        }
+    }
+    .hero_main_message{
+        font-family: grota;
+        color: $secondary_color;
+    }
+    .hero_motto{
+        color: $secondary_color;
+    }
+    .animations{
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        top: -13vh;
+        
+        @media all and (max-width : $md) {
+            top: -17vh;
+            overflow-x: hidden;
+            overflow: hidden;
+        }
+        .atom{
+            text-align: center;
+            overflow: hidden;
+            z-index: -1;
+            .core{
+                margin: 0 auto;
+                background-image: url("../img/dst/svg/homepage/core.svg");
+                width: 33px;
+                height: 33px;
+                left: calc(((100vw - (100vw - 100%)) - 33.12px)/2);
+                position: absolute;
+                top: calc((385.46px - 33.12px)/2);
+                background-size: 100% 100%;
+            }
+            .ellipses{
+                // max-width: 532px;
+                margin: 0 auto;
+                height: 50vh;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                @media all and (max-width : $md) {
+                    
+                }
+                .ellipse1{
+                    // transform: rotate(0deg);
+                    animation: ellipserotate1 9s infinite ease-in-out;
+                    // animation-delay: 1s;
+                }
+                .ellipse2{
+                    // transform: rotate(45deg);
+                    animation: ellipserotate2 9s infinite ease-in-out;
+                }
+                .ellipse3{
+                    // transform: rotate(90deg);
+                    animation: ellipserotate3 9s infinite ease-in-out;
+                    // animation-delay: 1s;
+                }
+                .ellipse4{
+                    // transform: rotate(135deg);
+                    animation: ellipserotate4 9s infinite ease-in-out;
+                }
+                .ellipse{
+                    position: absolute;
+                    top: 0;
+                    margin: 0 auto;
+                }
+                .ellipse-k-1{
+                    margin: 0 auto;
+                    background-image: url("../img/dst/svg/homepage/ellipse.svg");
+                    height: 532px;
+                    width: 101px;
+                    background-repeat: no-repeat;
+                    left: calc(((100vw - (100vw - 100%)) - 100.2px)/ 2);
+                    top: -73px;
+                    @media all and (max-width : $md) {
+                        background-size: 100% 100%;
+                        height: 310px;
+                        width: 59px;
+                        background-repeat: no-repeat;
+                        left: calc(((100vw - (100vw - 100%)) - 58.45px)/ 2);
+                        top: 40px;
+                    }
+                    
+                }
+                .ellipse-k-2{
+                    margin: 0 auto;
+                    background-image: url("../img/dst/svg/homepage/ellipse2.svg");
+                    height: 386px;
+                    width: 73px;
+                    background-repeat: no-repeat;
+                    left: calc(((100vw - (100vw - 100%)) - 72.71px)/ 2);
+                    @media all and (max-width : $md) {
+                        background-size: 100% 100%;
+                        height: 225px;
+                        width: 43px;
+                        background-repeat: no-repeat;
+                        left: calc(((100vw - (100vw - 100%)) - 42.42px)/ 2);
+                        top: 80px;
+                    }
+                }
+            }
+        }
+        .dots{
+            position: absolute;
+            top: 0;
+            z-index: -4;
+            overflow: hidden;
+            width: 100%;
+            height: 60vh;
+            .dot{
+                position: absolute;
+                background-color: $dark_color7;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                animation: dotspin1 0.1s infinite linear;
+            }
+            .dot1{
+                top: 25px;
+                left: 122px;
+                
+            }
+            .dot2{
+                top: 34px;
+                left: 475px;
+            }
+            .dot3{
+                top: 94px;
+                left: 790px;
+            }
+            .dot4{
+                top: 21px;
+                left: 1079px;
+            }
+            .dot5{
+                top: 74px;
+                left: 1378px;
+            }
+            .dot6{
+                top: 94px;
+                left: 790px;
+            }
+            .dot7{
+                top: 237px;
+                left: 88px;
+            }
+            .dot8{
+                top: 274px;
+                left: 308px;
+            }
+            .dot9{
+                top: 242px;
+                left: 1036px;
+            }
+            .dot10{
+                top: 227px;
+                left: 1209px;
+            }
+            .dot11{
+                top: 421px;
+                left: 23px;
+            }
+            .dot12{
+                top: 390px;
+                left: 614px;
+            }
+            .dot13{
+                top: 460px;
+                left: 1018px;
+            }
+            .dot14{
+                top: 605px;
+                left: 161px;
+            }
+            .dot15{
+                top: 593px;
+                left: 1195px;
+            }
+            
+        }
+        #bubbles{
+            width: 100%;
+            height: 60vh;
+            z-index: -1;
+            .chars{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-repeat: no-repeat;
+                border: 3px solid #fff;
+                box-shadow: 2px 26px 32px #bbb;
+                border-radius: 30px;
+            }
+            .char1{
+                background-image: url("../img/dst/svg/characters/deerhead-profile.svg");
+                background-size: 57%;
+                background-position: center;
+                left: 23vw;
+                top: 6vh;
+                width: 50px;
+                height: 50px;
+                animation: char1anim 6s infinite linear;
+                background-color: rgb(224, 245, 205);
+                @media all and (max-width : $md) {
+                    left: 30vw;
+                    top: 3vh;
+                }
+            }
+            .char2{
+                background-image: url("../img/dst/svg/characters/pandahead-profile-left.svg");
+                background-size: 90%;
+                background-position: center;
+                background-color: rgb(205, 216, 245);
+                left: 16vw;
+                top: 28vh;
+                width: 40px;
+                height: 40px;
+                animation: char2anim 5s infinite linear;
+                @media all and (max-width : $md) {
+                    left: -2vw;
+                    top: 10vh;
+                }
+            }
+            .char3{
+                background-image: url("../img/dst/svg/characters/pantherhead-profile.svg");
+                background-size: 85%;
+                background-position: center;
+                left: 24vw;
+                top: 39vh;
+                animation: char3anim 7s infinite linear;
+                background-color: rgb(244, 205, 245);
+                @media all and (max-width : $md) {
+                    left: 0;
+                }
+            }
+            .char4{
+                background-image: url("../img/dst/svg/characters/unicornhead-profile.svg");
+                background-size: 57%;
+                background-position: center;
+                right: 20vw;
+                top: 8vh;
+                background-size: 60px 60px;
+                animation: char4anim 3s infinite linear;
+                background-color: rgb(245, 229, 205);
+                @media all and (max-width : $md) {
+                    right: 0;
+                }
+            }
+            .char5{
+                background-image: url("../img/dst/svg/characters/cathead-profile.svg");
+                background-size: 57%;
+                background-position: center;
+                right: 15vw;
+                top: 26vh;
+                background-size: 50px 50px;
+                width: 50px;
+                height: 50px;
+                animation: char5anim 8s infinite linear;
+                background-color: rgb(245, 205, 208);
+                @media all and (max-width : $md) {
+                    // right: -5vw;
+                    display: none;
+                }
+            }
+            .char6{
+                background-image: url("../img/dst/svg/characters/pantherhead.svg");
+                background-size: 90%;
+                background-position: center bottom;
+                right: 30vw;
+                top: 48vh;
+                // background-size: 40px 40px;
+                width: 40px;
+                height: 40px;
+                animation: char6anim 6s infinite linear;
+                background-color: rgb(245, 244, 205);
+                @media all and (max-width : $md) {
+                    right: 0;
+                    top: 34vh;
+                }
+            }
+        }
+    }
+    .welcome_carpet_wrapper{
+        width: 100%;
+        margin-top: 120px;
+        @media all and (max-width : $md) {
+            margin-top: 13px;
+
+        }
+        .slick-arrow{
+            margin: 10px;
+        }
+        .welcome_stage{
+            margin: 0 auto;
+            background-image: url("../img/dst/svg/homepage/ground.svg");
+            max-width: 616px;
+            max-height: 166px;
+            width: 42%;
+            min-width: 224px;
+            height: 166px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            z-index: -2;
+            position: relative;
+            background-position-y: bottom;
+            margin-top: -40px;
+            @media all and (max-width : $xl) {
+                margin-top: -60px;
+            }
+            @media all and (max-width : $ml) {
+                margin-top: -100px;
+            }
+            @media all and (max-width : $md) {
+                height: 70px;
+                margin-top: -17px;
+            }
+        }
+        .welcome_red_carpet{
+            width: 100%;
+            max-height: 373px;
+            height: 26vw;
+            background-image: url("../img/dst/svg/homepage/carpet.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin-top: 15px;
+            z-index: -3;
+            position: relative;
+            @media all and (max-width : $md) {
+                // height: 25.9vw;
+                margin-top: -20px;
+            }
+        }
+        .welcome_sticks{
+            // position: absolute;
+            // height: 248px;
+            overflow: hidden;
+            width: 100%;
+            margin-top: -32px;
+            @media all and (max-width : $md) {
+                position: relative;
+                height: 100px;
+                margin-bottom: -109px;
+            }
+            
+            .welcome_stick{
+                background-image: url("../img/dst/svg/homepage/stick.svg");
+                background-repeat: no-repeat;
+                width: 13vw;
+                height: 248px;
+                background-size: 100%;
+                max-width: 188px;
+            }
+            .welcome_sticks_left{
+                position: absolute;
+                left: 15vw;
+                @media all and (max-width : $md) {
+                    left:-4vw;
+                }
+                @media all and (min-width: $xxl) {
+                    left: 220px;
+                }
+            }
+            .welcome_sticks_right{
+                transform: scaleX(-1);
+                position: absolute;
+                left: 70.3vw;
+                @media all and (max-width : $md) {
+                    right: -14px;
+                    left: auto;
+                }
+                @media all and (min-width: $xxl) {
+                    left: 1032px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes ellipserotate2 {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes ellipserotate1 {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+@keyframes ellipserotate4 {
+    0% {
+        transform: rotate(-0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes ellipserotate3 {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes char1anim {
+    from { transform: rotate(0deg) translateX(10px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(10px) rotate(-360deg); }
+}
+@keyframes char2anim {
+    from { transform: rotate(0deg) translateX(-8px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(-8px) rotate(-360deg); }
+}
+@keyframes char3anim {
+    from { transform: rotate(0deg) translateX(12px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+}
+@keyframes char4anim {
+    from { transform: rotate(0deg) translateX(-6px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(-6px) rotate(-360deg); }
+}
+@keyframes char5anim {
+    from { transform: rotate(0deg) translateX(12px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(12px) rotate(-360deg); }
+}
+@keyframes char6anim {
+    from { transform: rotate(0deg) translateX(-5px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(-5px) rotate(-360deg); }
+}
+@keyframes dotspin1 {
+    from { transform: rotate(0deg) translateX(-0.5px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(-0.5px) rotate(-360deg); }
+}
+

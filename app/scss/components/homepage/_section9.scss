@@ -1,0 +1,42 @@
+.section9{
+    background-color: $secondary_color_dark;
+    padding-top: 8vw;
+    width: 100%;
+    max-width: none !important;
+    padding-bottom: 8vw;
+    z-index: 1;
+    // margin-top: 13vw !important;
+    &::after{
+        background-image: url("../img/dst/png/components/misc/game_bg.png");
+        opacity: 0.15;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 0;  
+        content: "";
+        width: 100%;
+    }
+    .section_bg_image{
+        background-image: url("../img/dst/svg/homepage/wodo_members.svg");
+        max-width: 800px;
+        max-height: 575px;
+        width: 90%;
+        height: 60vw;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+        z-index: 2;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .section_sub_message{
+        font-family: grota;
+        font-size: 24px;
+        // margin: 0 auto;
+        // width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
