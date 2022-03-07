@@ -1,4 +1,16 @@
-# wodo
+
+
+<h1><strong>Wodo GameHub Web UI 1.0</strong> <br>Web interface for the Wodo Gaming Hub</h1>
+
+<p>
+	<img src="https://raw.githubusercontent.com/wodo-platform/wg-web-ui/master/app/img/_src/branding/wodo_brandingimg/dst/svg?token=AAESYQUT2HAOJ2HJP2UGRVTBSI5BS" alt="Wodo Gaming">
+</p>
+
+<p>Wodo Gaming Hub Web UI is an VueJs with TailwindUI.</p>
+
+<p><strong>Wodo Game Hub Web UI</strong> Start Template uses the best practices of web development.</p>
+
+<p>Cross-browser compatibility: IE9+.</p>
 
 ## Build Setup
 
