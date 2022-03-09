@@ -1,0 +1,273 @@
+
+$xs: 0;
+$ss: 370px;
+$ssm: 430px;
+$ssmm: 510px;
+$smm: 530px;
+$sm: 576px;
+$smmd: 595px;
+$smdd: 626px;
+$smd: 705px;
+$md: 768px;
+$ml: 830px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1440px;
+
+
+$primary_color : #6100D4;
+$primary_dark : #4B00A3;
+$secondary_color : #FF3815;
+$secondary_color_dark : #B71C00;
+$light_primary_color : #D62000;
+$yellow1 : #F9CA56;
+$yellow2 : #FBDD11;
+$dark_color1 : #313336;
+$dark_color2 : #696C73;
+$dark_color3 : #767980;
+$dark_color4 : #909399;
+$dark_color5 : #9C9FA7;
+$dark_color6 : #B7BAC6;
+$dark_color7 : #DEDEE8;
+$dark_color8 : #767980;
+
+$light_color1 : #FFFFFF;
+$light_color2 : #F6F6F7;
+$light_color3 : #EEEEF1;
+$light_color4 : #D1D2D6;
+
+.fancy_text{
+  &:before{
+    content: attr(title);
+    z-index: -1;
+    -webkit-text-stroke: 7px #313336;
+    position: absolute;
+  }
+}
+
+.token_allocation_content{
+  background-color: #ff9482;
+  border-radius: 3px;
+  width: 100%;
+  height: 8px;
+  .token_allocation_bar{
+    height: 8px;
+    border-radius: 3px;
+    &.color1{
+      width: 20%;
+      background-color: #3D88FB;
+    }
+    &.color2{
+      width: 27%;
+      background-color: #5637C8;
+    }
+    &.color3{
+      width: 15%;
+      background-color: #00D89E;
+    }
+    &.color4{
+      width: 2%;
+      background-color: #ACDF35;
+    }
+    &.color5{
+      width: 1%;
+      background-color: #9116CD;
+    }
+    &.color6{
+      width: 6%;
+      background-color: #3584bd;
+    }
+    &.color7{
+      width: 6%;
+      background-color: #f7f137;
+    }
+    &.color8{
+      width: 12%;
+      background-color: #323c6e;
+    }
+    &.color9{
+      width: 10%;
+      background-color: #deda4e;
+    }
+    &.color10{
+      width: 1%;
+      background-color: #AB3E5B;
+    }
+    &.color11{
+      width: 50%;
+      background-color: #ce4a6d;
+    }
+  }
+}
+
+.roadmap {
+  .line{
+    width: 10px;
+    background-color: #fff;
+    position: absolute;
+    height: calc(100% - 175.6px);
+    left: calc(((100vw - (100vw - 100%)) - 10px)/2);
+    top: 163.6px;
+    @media all and (max-width : $ssm) {
+      right: 0;
+      left: calc(((100vw - (100vw - 100%)) - 10px));
+    }
+  }
+  .roadmap_q{
+    width: 50%;
+    @media all and (max-width : $ssm) {
+      width: 100%;
+    }
+    .roadmap_q_head{
+      font-size: 48px;
+      font-family: grota;
+      font-weight: 800;
+      line-height: 84px;
+
+      @media all and (max-width : $smd) {
+        font-size: 42px;
+      }
+      @media all and (min-width : $xs) and (max-width : $sm) {
+        font-size: 36px;
+      }
+      @media all and (max-width : $sm) {
+        font-size: 28px;
+      }
+    }
+    .roadmap_q_list{
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @media all and (max-width : $ssm) {
+          font-size: 12px;
+        }
+        li{
+          position: relative;
+        }
+      }
+    }
+    &.left{
+      // margin-left: -90px;
+      text-align: right;
+      .roadmap_content_wrapper{
+        margin-right: 90px;
+      }
+      .roadmap_q_head{
+        margin-right: -90px;
+        padding-right: 115px;
+        background-image: url("assets/images/roadmap/q_h_bg.svg");
+        background-repeat: no-repeat;
+        background-size: 90px;
+        background-position-x: right;
+        background-position-y: center;
+        @media all and (max-width : $ssm) {
+          margin-right: -90px;
+        }
+      }
+      .roadmap_q_list{
+        ul{
+          li{
+            margin-right: -90px;
+            padding-right: 95px;
+            background-image: url("assets/images/roadmap/q_l_bg.svg");
+            background-repeat: no-repeat;
+            background-size: 65px;
+            background-position-x: right;
+            background-position-y: center;
+            @media all and (max-width : $ssm) {
+              margin-right: -90px;
+            }
+            .checked_item,
+            .processing_item{
+              background-image: url("assets/images/roadmap/checked_item.svg");
+              background-repeat: no-repeat;
+              background-size: 100%;
+              width: 26px;
+              height: 18px;
+              float: right;
+              text-align: right;
+              position: absolute;
+              right: 450px;
+              @media all and (max-width : $ml) {
+                left: 10px;
+              }
+            }
+            .processing_item{
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+    }
+    &.right{
+      margin-left: calc(50% + 90px);
+      text-align: left;
+      width: calc(50% - 90px);
+      @media all and (max-width : $ssm) {
+        width: 100%;
+        text-align: right;
+        margin-left: -90px;
+      }
+      .roadmap_q_head{
+        background-image: url("assets/images/roadmap/q_h_rbg.svg");
+        background-repeat: no-repeat;
+        background-size: 90px;
+        background-position-x: left;
+        background-position-y: center;
+        margin-left: -95px;
+        padding-left: 115px;
+        @media all and (max-width : $ssm) {
+          background-image: url("assets/images/roadmap/q_h_bg.svg");
+          background-position-x: right;
+          margin-right: -90px;
+          padding-right: 115px;
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+      .roadmap_q_list{
+        ul{
+          li{
+            margin-left: -95px;
+            padding-left: 95px;
+            background-image: url("assets/images/roadmap/q_l_rbg.svg");
+            background-repeat: no-repeat;
+            background-size: 65px;
+            background-position-x: left;
+            background-position-y: center;
+            @media all and (max-width : $ssm) {
+              background-image: url("assets/images/roadmap/q_l_bg.svg");
+              background-position-x: right;
+              margin-right: -90px;
+              padding-right: 95px;
+              margin-left: 0;
+              padding-left: 0;
+            }
+            .checked_item,
+            .processing_item{
+              background-image: url("assets/images/roadmap/checked_item.svg");
+              background-repeat: no-repeat;
+              background-size: 100%;
+              width: 26px;
+              height: 18px;
+              float: left;
+              position: absolute;
+              @media all and (min-width : $xl) {
+                // right: 167px;
+                left: 460px;
+              }
+              @media all and (max-width : $xl) {
+                right: 10px;
+                // left: 0;
+              }
+              @media all and (max-width : $ssm) {
+                left: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

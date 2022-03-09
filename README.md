@@ -6,83 +6,76 @@
 	<img src="https://raw.githubusercontent.com/wodo-platform/wg-web-ui/master/app/img/_src/branding/wodo_brandingimg/dst/svg?token=AAESYQUT2HAOJ2HJP2UGRVTBSI5BS" alt="Wodo Gaming">
 </p>
 
-<p>Author: <a href="https://bekirdag.com" target="_blank">Bekir Dağ</a></p>
-
-<p>Wodo Gaming Hub Web UI is an HTML5 template with Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+<p>Wodo Gaming Hub Web UI is an VueJs with TailwindUI.</p>
 
 <p><strong>Wodo Game Hub Web UI</strong> Start Template uses the best practices of web development.</p>
 
 <p>Cross-browser compatibility: IE9+.</p>
 
-<p>The template uses a Sass with <strong>Sass</strong> or <strong>Scss</strong> syntax (optional).</p>
+## Build Setup
 
-<h2>How to</h2>
+```bash
+# install dependencies
+$ npm install
 
-<ol>
-	<li>Install Node Modules: <strong>npm i</strong>;</li>
-	<li>Run the template: <strong>gulp</strong>.</li>
-</ol>
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-<h2>Gulp tasks:</h2>
+# build for production and launch server
+$ npm run build
+$ npm run start
 
-<ul>
-	<li><strong>gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development;</li>
-</ul>
-
-<h2>Rules for working with the starting HTML template</h2>
-
-<ol>
-	<li>All HTML files should have similar initial content as in <strong>app/index.html</strong>;</li>
-	<li><strong>Template Basic Images Start</strong> comment in app/index.html - all your custom template basic images (og:image for social networking, favicons for a variety of devices);</li>
-	<li><strong>Custom Browsers Color Start</strong> comment in app/index.html: set the color of the browser head on a variety of devices;</li>
-	<li><strong>Custom HTML</strong> comment in app/index.html - all your custom HTML;</li>
-	<li>For installing new jQuery library, just run the command "<strong>bower i plugin-name</strong>" in the terminal. Libraries are automatically placed in the folder <strong>app/libs</strong>. Bower must be installed in the system (npm i -g bower). Then place all jQuery libraries paths in the <strong>'libs'</strong> task (gulpfile.js);</li>
-	<li>All custom JS located in <strong>app/js/common.js</strong>;</li>
-	<li>All Sass vars placed in <strong>app/sass/_vars.sass | app/scss/_vars.scss</strong>;</li>
-	<li>All Bootstrap media queries placed in <strong>app/sass/_media.sass | app/scss/_media.scss</strong>;</li>
-	<li>All libraries CSS styles placed in <strong>app/sass/_libs.sass | app/scss/_libs.scss</strong>;</li>
-	<li>Rename <strong>ht.access</strong> to <strong>.htaccess</strong> before place it in your web server. This file contain rules for files caching on web server.</li>
-</ol>
-
-
-<h2>Popup</h2>
-
-<p>To open any link inside a popup, you need to add a few attributes to the element such as below: </p>
-
-```html
-<a class="button purple login withimage popup_link" popup_title="Hello World!" popup_content="/popup_sample/popup_sample.html">SIGN IN/ SIGN UP</a>
+# generate static project
+$ npm run generate
 ```
 
-<p>You can find an example on popup_sample/popup_sample.html to see how to add an image and how to wrap the buttons</p>
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-<h2>Slider</h2>
+## Special Directories
 
-<p>If you create the html as follows, it builds the slider up out of the box</p>
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-```html
-<div class="slider">
-	<div class="items_container">
-		<div class="slide_item">
-			<div class="slide_item_content">
-				<div class="sample_container1">
-					<p>Some content</p>
-				</div>
-				<div class="sample_container2">
-					<p>Some other content</p>
-				</div>
-			</div>
-		</div>
-		<div class="slide_item">
-			<div class="slide_item_content">
-				<div class="sample_container1">
-					<p>Some content</p>
-				</div>
-				<div class="sample_container2">
-					<p>Some other content</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-</div>
-```
+### `assets`
+
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+
+### `components`
+
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+
+### `layouts`
+
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+
+
+### `pages`
+
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+
+### `plugins`
+
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+
+### `static`
+
+This directory contains your static files. Each file inside this directory is mapped to `/`.
+
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+
+### `store`
+
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).

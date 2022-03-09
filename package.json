@@ -1,34 +1,35 @@
 {
-	"name": "wodo_web",
-	"version": "1.0.0",
-	"description": "Wodo gaming theme",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Bekir Dag",
-	"license": "ISC",
-	"devDependencies": {
-		"browser-sync": "^2.26.13",
-		"del": "^6.0.0",
-		"gulp": "^4.0.2",
-		"gulp-autoprefixer": "^7.0.1",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-concat": "^2.6.1",
-		"gulp-image-resize": "^0.13.1",
-		"gulp-imagemin": "^7.1.0",
-		"gulp-notify": "^3.2.0",
-		"gulp-rename": "^2.0.0",
-		"gulp-rsync": "0.0.9",
-		"gulp-sass": "^4.1.0",
-		"gulp-uglify": "^3.0.2"
-	},
-	"dependencies": {
-		"bootstrap": "^4.5.3",
-		"chart.js": "^3.6.2",
-		"gulp-svgmin": "^4.1.0",
-		"gulp-uglifycss": "^1.1.0",
-		"lottie-web": "^5.7.5",
-		"slick-carousel": "^1.8.1"
-	}
+  "name": "wodo",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.4.3",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "autoprefixer": "^10.4.2",
+    "chart.js": "^2.9.4",
+    "core-js": "^3.19.3",
+    "nuxt": "^2.15.8",
+    "swiper": "^5.4.5",
+    "tailwindcss": "^3.0.23",
+    "vue": "^2.6.14",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-chartjs": "^3.5.1",
+    "vue-cool-lightbox": "^2.7.4",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "postcss": "^8.4.6",
+    "sass": "^1.49.7",
+    "sass-loader": "^10.2.1"
+  }
 }
