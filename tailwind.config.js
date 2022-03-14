@@ -17,6 +17,7 @@ module.exports = {
         'wd-background-red': '#f93716',
         'wd-primary': '#6100D4',
         'wd-primary-dark': '#4B00A3',
+        'wd-primary-light': '#F0E4FD',
         'wd-black-dark': '#313336',
         'wd-gray-2': '#696c73',
         'wd-gray-3': '#767980',
@@ -28,6 +29,9 @@ module.exports = {
         'wd-pink-light': '#feebe7',
         'wd-yellow': '#F9CA56',
         'wd-yellow-light': '#FBDD11',
+        'wd-green': '#679666',
+        'wd-green-light': '#8ab689',
+        'wd-turquoise': '#28E1EC',
       }
     },
     fontFamily: {

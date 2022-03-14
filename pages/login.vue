@@ -4,13 +4,15 @@
       <div class="w-full">
         <div class="w-[90%] m-auto lg:m-0">
           <LogoIcon class="w-32 h-auto mb-4 mx-auto lg:mx-0"/>
-          <div class="flex bg-white border-d-gray-2 border-b-8 border-4 rounded-lg space-x-1 p-1">
-            <button :class="(tab !== 'signin')?'bg-white text-wd-gray-5':'bg-wd-gray-5 text-white'" class="font-bold p-1 rounded-lg transition duration-500 w-full " @click="tab = 'signin'">
-              <span class="duration-150 ease-in-out uppercase">Sign In</span>
-            </button>
-            <button :class="(tab !== 'signup')?'bg-white text-wd-gray-5':'bg-wd-gray-5 text-white'" class="font-bold p-1 rounded-lg transition duration-500 w-full" @click="tab = 'signup'">
-              <span class="duration-150 ease-in-out uppercase">Sign Up</span>
-            </button>
+          <div class="bg-wd-gray-6 border-wd-gray-6 border-b-8 rounded-lg">
+            <div class="flex bg-white border-wd-gray-6 border-4 rounded-lg space-x-1 p-1">
+              <button :class="(tab !== 'signin')?'bg-white text-wd-gray-5':'bg-wd-gray-5 text-white'" class="font-bold p-1 rounded-lg transition duration-500 w-full " @click="tab = 'signin'">
+                <span class="duration-150 ease-in-out uppercase">Sign In</span>
+              </button>
+              <button :class="(tab !== 'signup')?'bg-white text-wd-gray-5':'bg-wd-gray-5 text-white'" class="font-bold p-1 rounded-lg transition duration-500 w-full" @click="tab = 'signup'">
+                <span class="duration-150 ease-in-out uppercase">Sign Up</span>
+              </button>
+            </div>
           </div>
           <div class="relative flex flex-col mt-4">
             <transition
@@ -72,8 +74,7 @@ export default {
   },
   methods: {
     submit() {
-      console.log('ssss')
-      this.$router.push('/dashboard')
+      this.$router.push('/')
     }
   }
 }
