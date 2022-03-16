@@ -25,16 +25,21 @@
         </div>
       </div>
       <div class="w-full lg:w-1/4 text-center lg:text-right ">
-        <nuxt-link to="/games/1" class="uppercase bg-wd-secondary text-white rounded-md border-b-8 border-4 border-wd-secondary-light px-3 py-1.5 m-auto hover:border-wd-secondary ">play</nuxt-link>
+        <button @click.prevent="confirmStartGame" class="uppercase bg-wd-secondary text-white rounded-md border-b-8 border-4 border-wd-secondary-light px-3 py-1.5 m-auto hover:border-wd-secondary ">play</button>
       </div>
-
     </div>
   </div>
 </template>
 <script>
 import GameOptionsIcon from "@/components/images/GameOptionsIcon.vue";
 import OnlinePlayersIcon from "@/components/images/OnlinePlayersIcon.vue";
+
 export default {
-  components: {OnlinePlayersIcon, GameOptionsIcon}
+  components: {OnlinePlayersIcon, GameOptionsIcon},
+  methods: {
+    confirmStartGame() {
+      this.$emit('start', true)
+    }
+  }
 }
 </script>

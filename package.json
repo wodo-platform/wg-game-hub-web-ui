@@ -18,6 +18,7 @@
     "nuxt": "^2.15.8",
     "swiper": "^5.4.5",
     "tailwindcss": "^3.0.23",
+    "v-click-outside": "^3.1.2",
     "vue": "^2.6.14",
     "vue-awesome-swiper": "^4.1.1",
     "vue-chartjs": "^3.5.1",

@@ -7,6 +7,7 @@
     <span v-if="icon!==''" class="flex absolute right-0 bg-transparent rounded text-base text-gray-600 p-2">
       <MailIcon v-if="icon==='mail'"/>
       <LockIcon v-if="icon==='lock'"/>
+      <SearchIcon v-if="icon==='search'"/>
     </span>
   </div>
 </template>
@@ -14,10 +15,11 @@
 <script>
 import MailIcon from "@/components/images/MailIcon.vue";
 import LockIcon from "@/components/images/LockIcon.vue";
+import SearchIcon from "@/components/images/SearchIcon.vue";
 
 export default {
   name: 'input-text',
-  components: {LockIcon, MailIcon},
+  components: {SearchIcon, LockIcon, MailIcon},
   props: {
     value: {
       require: true
@@ -25,7 +27,7 @@ export default {
     placeholder: {},
     icon: {
       default: '',
-      // available values: [mail, lock]
+      // available values: [mail, lock, search]
     },
   },
   data () {

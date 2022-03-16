@@ -108,10 +108,10 @@
     </div>
     <simple-modal v-if="showWhitelistModal">
       Update Status
-      <template slot="subtitle">
+      <template v-slot:subtitle>
         <p>content</p>
       </template>
-      <template slot="buttons">
+      <template v-slot:buttons>
         <div class="flex justify-between">
           <button @click.prevent="showWhitelistModal = false" type="button" class="uppercase bg-white rounded-md border-b-8 border-4 border-wd-gray-2 px-3 py-1.5 w-auto m-auto hover:border-wd-secondary">
             Cancel
