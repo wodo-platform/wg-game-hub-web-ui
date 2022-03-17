@@ -24,14 +24,8 @@
           leave-class="opacity-100 translate-y-0 sm:scale-100"
           leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       >
-        <div class="inline-block align-bottom rounded-lg text-left shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full bg-wd-secondary border-wd-secondary border-b-4 rounded-lg" :class="width">
-          <div class="bg-white border-wd-secondary border-4 rounded-lg">
-            <div class="hidden sm:block absolute top-0 right-0 pt-4 pr-4">
-              <button type="button" class="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                <span class="sr-only">Close</span>
-                <x-icon class="h-6 w-6"/>
-              </button>
-            </div>
+        <div class="inline-block align-bottom rounded-lg text-left shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full bg-wd-secondary border-wd-secondary border-b-[6px] rounded-lg" :class="width">
+          <div class="bg-white border-wd-secondary border-[3px] rounded-lg">
             <div class="w-[103%] -ml-2 -mt-10 sm:-mt-10">
               <div class="fixed inset-x-0 -mt-10 z-10 items-center bg-wd-secondary text-white font-extrabold text-2xl py-1 text-center rounded-md border-b-8 border-4 border-wd-secondary-light w-3/5 m-auto" ><slot></slot></div>
               <TenteImage class="w-full -mt-5 object-fill"/>
@@ -54,6 +48,28 @@
             </div>
           </div>
         </div>
+<!--        <WgBlock border_color="wd-secondary" class="inline-block align-bottom text-left shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" :class="width">-->
+<!--          <div class="w-[115%] sm:w-[120%] -ml-8 sm:-ml-12 -mt-14 sm:-mt-12">-->
+<!--            <div class="fixed inset-x-0 -mt-10 z-10 items-center bg-wd-secondary text-white font-extrabold text-2xl py-1 text-center rounded-md border-b-8 border-4 border-wd-secondary-light w-3/5 m-auto" ><slot></slot></div>-->
+<!--            <TenteImage class="w-full -mt-5 object-fill"/>-->
+<!--          </div>-->
+<!--          <div class="inline-block align-bottom pt-4 w-full">-->
+<!--            <div class="sm:flex sm:items-start">-->
+<!--              <slot name="icon"></slot>-->
+<!--              <div class="mt-3 text-center sm:mt-0 sm:mx-4 sm:text-left w-full">-->
+<!--                <div class="mt-2">-->
+<!--                  <p class="text-sm text-gray-500">-->
+<!--                    <slot name="subtitle"></slot>-->
+<!--                  </p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="mt-5 sm:mt-4">-->
+<!--              <slot name="buttons"></slot>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </WgBlock>-->
+
       </transition>
     </div>
   </div>
@@ -61,9 +77,10 @@
 
 <script>
 import TenteImage from "@/components/images/TenteImage.vue";
+import WgBlock from "@/components/partials/WgBlock.vue";
 export default {
   name: 'simple-modal',
-  components: {TenteImage},
+  components: {WgBlock, TenteImage},
   props: {
     width: ''
   }
